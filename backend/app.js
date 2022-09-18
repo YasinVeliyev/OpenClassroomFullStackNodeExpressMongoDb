@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 require("dotenv").config({ path: "../.env" });
 const mongoose = require("mongoose");
@@ -12,9 +13,13 @@ mongoose
         console.log("Unable to connect to MongoDB Atlas!");
         console.error(error);
     });
+=======
+const express=require('express')
+>>>>>>> parent of bc3147e (	modified:   backend/app.js)
 
-const app = express();
+const app=express()
 
+<<<<<<< HEAD
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -80,3 +85,10 @@ app.post("/api/stuff", async (req, res, next) => {
 });
 
 module.exports = app;
+=======
+app.get("/",(req,res)=>{
+    res.send("Express App")
+})
+
+module.exports=app
+>>>>>>> parent of bc3147e (	modified:   backend/app.js)

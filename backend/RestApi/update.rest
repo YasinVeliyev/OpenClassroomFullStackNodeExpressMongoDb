@@ -1,12 +1,10 @@
-POST http://localhost:3000/api/stuff
+PUT http://localhost:3000/api/stuff/632cb4772668877232b1a9c1
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzJjYThhYWM1ODU2OWUwMzc0N2EwNDUiLCJpYXQiOjE2NjM4NzE0NTMsImV4cCI6MTY2Mzk1Nzg1M30.yJIouM-5Sj5MoU8V6lB56m9Bg-8Lu1anWg6AEZdiu3Q
 
 {
-    "_id": "12345ass6",
     "title": "My second thing",
     "description": "All of about my things",
-    "imageUrl": "/",
-    "price": 3900,
-    "userId": "632ca8aac58569e03747a045"
+    "imageUrl": "https://wallsdesk.com/wp-content/uploads/2017/01/White-Dandelion-Photos.jpg",
+    "price": 390
 }

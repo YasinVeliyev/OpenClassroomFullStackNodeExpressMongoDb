@@ -1,3 +1,4 @@
+const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
 
 exports.signUp = async (req, res, next) => {
@@ -15,9 +16,10 @@ exports.signIn = async (req, res, next) => {
     try {
         let user = await User.findOne({ email: req.body.email });
         if (user && (await user.checkPassword(req.body.password))) {
+            const token = jwt.sign({ userId: user._id }, process.env["JWT_SECRET_KEY"], { expiresIn: "24h" });
             res.status(200).json({
                 userId: user._id,
-                token: "token",
+                token,
             });
         } else {
             return res.status(401).json({ error: new Error("Email or Password is wrong") });

@@ -1,0 +1,3 @@
+DELETE http://localhost:3000/api/stuff/632c9c66edd48ee176ff0278
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzJjYThhYWM1ODU2OWUwMzc0N2EwNDUiLCJpYXQiOjE2NjM4NzE0NTMsImV4cCI6MTY2Mzk1Nzg1M30.yJIouM-5Sj5MoU8V6lB56m9Bg-8Lu1anWg6AEZdiu3Q

@@ -132,3 +132,4 @@ dist
 backend/*.env
 */.gitignore
 */.vscode/
+images
